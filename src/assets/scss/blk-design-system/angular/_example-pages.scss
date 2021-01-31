@@ -1,0 +1,22 @@
+.index-page .squares {
+  @include linear-gradient($success-states, $success);
+}
+
+.index-page .circles {
+  @include linear-gradient($success-states, $success);
+}
+
+.index-page .pacman {
+  @include linear-gradient($success-states, $success);
+}
+
+.register-page,
+.section.section-signup {
+  .squares,
+  .square {
+    @include linear-gradient($danger-states, $danger);
+  }
+}
+.footer {
+  border-top: 2px solid $danger;
+}
