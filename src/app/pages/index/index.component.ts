@@ -22,7 +22,7 @@ export class IndexComponent implements OnInit, OnDestroy {
     var body = document.getElementsByTagName("body")[0];
     body.classList.add("index-page");
 
-    var slider = document.getElementById("sliderRegular");
+    /*var slider = document.getElementById("sliderRegular");
 
     noUiSlider.create(slider, {
       start: 40,
@@ -42,7 +42,7 @@ export class IndexComponent implements OnInit, OnDestroy {
         min: 0,
         max: 100
       }
-    });
+    });*/
   }
   ngOnDestroy() {
     /*var body = document.getElementsByTagName("body")[0];

@@ -39,17 +39,17 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     HttpClientModule,
     RouterModule,
     AppRoutingModule,
-    // BsDropdownModule.forRoot(),
-    // ProgressbarModule.forRoot(),
-    // TooltipModule.forRoot(),
-    // CollapseModule.forRoot(),
-    // TabsModule.forRoot(),
-    PagesModule
-    // PaginationModule.forRoot(),
-    // AlertModule.forRoot(),
-    // BsDatepickerModule.forRoot(),
-    // CarouselModule.forRoot(),
-    // ModalModule.forRoot()
+    BsDropdownModule.forRoot(),
+    //ProgressbarModule.forRoot(),
+    TooltipModule.forRoot(),
+    CollapseModule.forRoot(),
+    TabsModule.forRoot(),
+    //PagesModule,
+    //PaginationModule.forRoot(),
+    //AlertModule.forRoot(),
+    //BsDatepickerModule.forRoot(),
+    //CarouselModule.forRoot(),
+    //ModalModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
