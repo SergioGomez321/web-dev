@@ -102,6 +102,14 @@
   }
 }
 
+@media (max-width: 450px) {
+  .h1-seo {
+      color: $white;
+      font-size: 50px !important;
+      text-transform: capitalize;
+  }
+}
+
 
 .circles {
   animation: move-left-right 1s infinite;
