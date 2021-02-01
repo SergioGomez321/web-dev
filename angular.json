@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "blk-design-system-angular": {
+    "web_dev": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/blk-design-system-angular",
+            "outputPath": "dist/web_dev",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -69,18 +69,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "blk-design-system-angular:build"
+            "browserTarget": "web_dev:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "blk-design-system-angular:build:production"
+              "browserTarget": "web_dev:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "blk-design-system-angular:build"
+            "browserTarget": "web_dev:build"
           }
         },
         "test": {
@@ -114,7 +114,7 @@
         }
       }
     },
-    "blk-design-system-angular-e2e": {
+    "web_dev-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -123,11 +123,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "blk-design-system-angular:serve"
+            "devServerTarget": "web_dev:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "blk-design-system-angular:serve:production"
+              "devServerTarget": "web_dev:serve:production"
             }
           }
         },
@@ -143,7 +143,7 @@
       }
     }
   },
-  "defaultProject": "blk-design-system-angular",
+  "defaultProject": "web_dev",
   "cli": {
     "analytics": false
   }
