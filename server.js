@@ -1,16 +1,22 @@
 //Install express server
+const bodyParser = require('body-parser');
+const cors = require('cors');
 const express = require('express');
 const path = require('path');
- 
-const app = express();
- 
-// Serve only the static files form the dist directory
-// Replace the '/dist/<to_your_project_name>'
+const configMensaje = require('./configMensaje');
+const app = express(); 
+
+app.use(bodyParser.json());
+app.use(cors());
 app.use(express.static(__dirname + '/dist/web_dev'));
- 
+
 app.get('*', function(req,res) {
-  // Replace the '/dist/<to_your_project_name>/index.html'
   res.sendFile(path.join(__dirname + '/dist/web_dev/index.html'));
 });
-// Start the app by listening on the default Heroku port
+
+app.post('/formulario', (req, res) => {
+  configMensaje(req.body);
+  res.status(200).send();
+})
+
 app.listen(process.env.PORT || 8080);

@@ -24,16 +24,22 @@ import { ProfilepageComponent } from "./pages/examples/profilepage/profilepage.c
 import { RegisterpageComponent } from "./pages/examples/registerpage/registerpage.component";
 import { LandingpageComponent } from "./pages/examples/landingpage/landingpage.component";
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { CommonModule } from "@angular/common";
+import { BrowserModule } from "@angular/platform-browser";
+import { ProjectsComponent } from "./pages/projects/projects.component";
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    ProjectsComponent
     // IndexComponent,
     // ProfilepageComponent,
     // RegisterpageComponent,
     // LandingpageComponent
   ],
   imports: [
+    CommonModule,
+    BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,

@@ -4,83 +4,37 @@
           <img class="path" src="assets/img/path4.png" style="width: 75%;" />
     
           <div class="container">
-            
+            <div class="title"><h3 class="mb-3">PROJECTS</h3></div>
 
             <div class="card-columns">
-                <div class="card text-center">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
-    
-                  <div class="card text-center">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
-    
-                  <div class="card text-center">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
 
 
+                <div *ngFor="let project of projects" class="card text-center" >
+                    <div class="card-body">
 
-                  <div class="card text-center">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
-    
-                  <div class="card text-center">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
-    
-                  <div class="card text-center">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
+                      <a href="#" (click)="doSomething($event, project)">
+                        <img class="card-img-top" src="{{project.img}}" alt="{{project.title}}">
+
+                      </a>
+                      <div class="card-body">
+                        <h5 class="card-title">{{project.title}}</h5>
+                        <!--<p class="card-text">{{project.description}}</p>-->
+                      </div>
 
 
-                  <div class="card text-center">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      
+                      
+                      <!--<div class="card-footer bg-transparent">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <button class="btn btn-success btn-simple btn-round text-success btn-block" type="button"><i class="fas fa-eye"></i></button>
+                          </div>
+                        </div>
+                      </div>-->
                     </div>
                   </div>
     
-                  <div class="card text-center">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
-    
-                  <div class="card text-center">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
+                  
             </div>
 
             
