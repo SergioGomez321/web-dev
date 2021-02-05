@@ -50,7 +50,7 @@ import { ContactComponent } from './contact/contact.component';
     RegisterpageComponent,
     LandingpageComponent,
     AboutmeComponent,
-    ProjectsComponent,
+    //ProjectsComponent,
     ContactComponent
   ],
   exports: [
