@@ -31,7 +31,7 @@ import { ProjectsComponent } from "./pages/projects/projects.component";
   declarations: [
     AppComponent,
     NavbarComponent,
-    ProjectsComponent
+     ProjectsComponent
     // IndexComponent,
     // ProfilepageComponent,
     // RegisterpageComponent,
