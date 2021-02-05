@@ -30,8 +30,7 @@ import { ProjectsComponent } from "./pages/projects/projects.component";
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
-    ProjectsComponent
+    NavbarComponent
     // IndexComponent,
     // ProfilepageComponent,
     // RegisterpageComponent,
