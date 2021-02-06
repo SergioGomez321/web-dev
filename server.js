@@ -11,7 +11,9 @@ app.use(cors());
 app.use(express.static(__dirname + '/dist/web_dev'));
 
 app.get('*', function(req,res) {
-  res.sendFile(path.join(__dirname + '/dist/web_dev/index.html'));
+  console.log(req.hostname);
+  return  req.hostname;
+  //res.sendFile(path.join(__dirname + '/dist/web_dev/index.html'));
 });
 
 app.post('/formulario', (req, res) => {

@@ -11,8 +11,8 @@ export class ProjectsComponent implements OnInit {
   projects = [
     {
       "title" : "Recruitment, induction, training of human resources",
-      "description" : "Description of Training and induction of human capital"
-      ,"img" : "assets/img/projects/recruiter.png"
+      "description" : "Description of Training and induction of human capital",
+      "img" : "assets/img/projects/recruiter.png"
     }, 
     {
       "title" : "Vending a machine",
@@ -64,8 +64,7 @@ export class ProjectsComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   doSomething(event, project){
     event.stopPropagation();
