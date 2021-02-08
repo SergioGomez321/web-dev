@@ -51,7 +51,7 @@ import { ContactComponent } from './contact/contact.component';
     LandingpageComponent,
     AboutmeComponent,
     //ProjectsComponent,
-    ContactComponent
+    // ContactComponent
   ],
   exports: [
     IndexComponent,
