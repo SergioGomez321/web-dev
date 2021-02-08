@@ -27,11 +27,14 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { CommonModule } from "@angular/common";
 import { BrowserModule } from "@angular/platform-browser";
 import { ProjectsComponent } from "./pages/projects/projects.component";
+import { MessageService } from "./services/message.service";
+import { ContactComponent } from "./pages/contact/contact.component";
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-     ProjectsComponent
+     ProjectsComponent,
+     ContactComponent
     // IndexComponent,
     // ProfilepageComponent,
     // RegisterpageComponent,
@@ -50,6 +53,7 @@ import { ProjectsComponent } from "./pages/projects/projects.component";
     TooltipModule.forRoot(),
     CollapseModule.forRoot(),
     TabsModule.forRoot(),
+    FormsModule,
     //PagesModule,
     //PaginationModule.forRoot(),
     //AlertModule.forRoot(),
@@ -57,7 +61,7 @@ import { ProjectsComponent } from "./pages/projects/projects.component";
     //CarouselModule.forRoot(),
     //ModalModule.forRoot()
   ],
-  providers: [],
+  providers: [MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

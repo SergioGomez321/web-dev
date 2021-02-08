@@ -6,14 +6,15 @@ const path = require('path');
 const configMensaje = require('./configMensaje');
 const app = express(); 
 
+require('dotenv').config()
+
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors());
 app.use(express.static(__dirname + '/dist/web_dev'));
 
 app.get('*', function(req,res) {
-  console.log(req.hostname);
   return  req.hostname;
-  //res.sendFile(path.join(__dirname + '/dist/web_dev/index.html'));
 });
 
 app.post('/formulario', (req, res) => {

@@ -46,10 +46,28 @@
                                     </div>
                                 </div>
                             </form>
+
+
+                            
                         </div>
                     </div>
                 </div>
             </div>
+
+            
+                    <form (ngSubmit)="contactForm(form.value)" #form="ngForm">
+                        
+                            <input type="text" class="form-control" name="nombre" ngModel>
+                        
+                            <input type="text" class="form-control" name="asunto" ngModel>
+                            <input type="email" class="form-control" name="email" ngModel>
+                        
+                            <textarea class="form-control" cols="30" rows="6" name="mensaje" ngModel>
+
+                            </textarea>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+            
         </section>
       </section>
 </div>

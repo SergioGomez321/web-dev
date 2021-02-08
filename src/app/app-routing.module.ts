@@ -10,6 +10,9 @@ import { LandingpageComponent } from "./pages/examples/landingpage/landingpage.c
 import { AboutmeComponent } from "./pages/aboutme/aboutme.component";
 import { ContactComponent } from "./pages/contact/contact.component";
 import { ProjectsComponent } from "./pages/projects/projects.component";
+import { HttpClientModule } from "@angular/common/http";
+import { FormsModule } from "@angular/forms";
+import { MessageService } from "./services/message.service";
 
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
@@ -26,10 +29,14 @@ const routes: Routes = [
   imports: [
     CommonModule,
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot(routes, {
       useHash: true
     })
   ],
-  exports: []
+  exports: [],
+  providers: [
+    
+  ]
 })
 export class AppRoutingModule {}

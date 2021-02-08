@@ -1,6 +1,7 @@
 const nodemailer = require('nodemailer');
 
 module.exports = (formulario) => {
+
     let transporter = nodemailer.createTransport({
         service: 'hotmail',
         auth: {
@@ -8,9 +9,11 @@ module.exports = (formulario) => {
         pass: process.env.password 
         }
     });
+    console.log("este es el formulario");
+    console.log(formulario.nombre + " - " + formulario.email)
     const mailOptions = {
-        from: `'${formulario.nombre} ' <${formulario.email}>`,
-        to: process.env.email, 
+        from: `${formulario.nombre} <${process.env.email}>`,
+        to: `${process.env.email}, ${process.env.email2}`, 
         subject: formulario.asunto,
         html: 
         `<strong>Nombre:</strong> ${formulario.nombre} <br/>
