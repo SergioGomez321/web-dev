@@ -10,15 +10,17 @@ module.exports = (formulario) => {
         }
     });
     console.log("este es el formulario");
-    console.log(formulario.nombre + " - " + formulario.email)
+    console.log(formulario.name + " - " + formulario.email)
     const mailOptions = {
-        from: `${formulario.nombre} <${process.env.email}>`,
+        from: `${formulario.name} <${process.env.email}>`,
         to: `${process.env.email}, ${process.env.email2}`, 
-        subject: formulario.asunto,
+        subject: formulario.subject,
         html: 
-        `<strong>Nombre:</strong> ${formulario.nombre} <br/>
-        <strong>E-mail:</strong> ${formulario.email} <br/>
-        <strong>Mensaje:</strong> ${formulario.mensaje}`
+        `<strong>Name:</strong> ${formulario.name} 
+        <br/>
+        <strong>Email:</strong> ${formulario.email} 
+        <br/>
+        <strong>Message:</strong> ${formulario.message}`
     };
     transporter.sendMail(mailOptions, function (err, info) {
         if (err)

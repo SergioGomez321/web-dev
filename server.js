@@ -18,8 +18,17 @@ app.get('*', function(req,res) {
 });
 
 app.post('/formulario', (req, res) => {
-  configMensaje(req.body);
-  res.status(200).send();
+  console.log(req.body);
+  try {
+    configMensaje(req.body);
+    res.setHeader('Content-Type', 'application/json');
+    res.end(JSON.stringify({ message: "Mail sent successfully!" , result: true}));
+    res.status(200).send();
+  } catch(e){
+    res.setHeader('Content-Type', 'application/json');
+    res.end(JSON.stringify({ message: "We had technical problems to send mail!", result : false, error: e }));
+    res.status(200).send();
+  }
 })
 
 app.listen(process.env.PORT || 8080);

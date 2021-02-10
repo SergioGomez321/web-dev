@@ -1,5 +1,7 @@
-import { Injectable } from '@angular/core';
+import { ContentChild, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Contact } from '../models/contact';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -8,7 +10,8 @@ export class MessageService {
 
   constructor(private _http: HttpClient) { }
 
-  sendMessage(body) {
-    return this._http.post('http://localhost:8080/formulario', body);
+
+  sendEmail(contact : Contact) {
+    return this._http.post(environment.hostname +'/formulario', contact);
   }
 }
