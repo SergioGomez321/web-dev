@@ -13,6 +13,7 @@ import { ProjectsComponent } from "./pages/projects/projects.component";
 import { HttpClientModule } from "@angular/common/http";
 import { FormsModule } from "@angular/forms";
 import { MessageService } from "./services/message.service";
+import { ProjectComponent } from "./pages/project/project.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: "aboutme", component: AboutmeComponent },
   { path: "contact", component: ContactComponent },
   { path: "projects", component: ProjectsComponent },
+  { path: "project/:id", component: ProjectComponent },
   { path: "profile", component: ProfilepageComponent },
   { path: "register", component: RegisterpageComponent },
   { path: "landing", component: LandingpageComponent }

@@ -24,6 +24,7 @@ import { LandingpageComponent } from "./examples/landingpage/landingpage.compone
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
+import { ProjectComponent } from './project/project.component';
 
 @NgModule({
   imports: [
@@ -50,6 +51,7 @@ import { ContactComponent } from './contact/contact.component';
     RegisterpageComponent,
     LandingpageComponent,
     AboutmeComponent,
+    
     //ProjectsComponent,
     // ContactComponent
   ],

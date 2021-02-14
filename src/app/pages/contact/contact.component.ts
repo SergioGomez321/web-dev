@@ -4,6 +4,7 @@ import { Response } from 'src/app/models/response';
 import { MessageService } from 'src/app/services/message.service';
 import Swal from 'sweetalert2'
 
+
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -17,23 +18,35 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {}
 
     sendForm(){
-      if(this.validateEmail(this.contact.email)){
-        console.log("correo correcto");
-      }
 
-      this._MessageService.sendEmail(this.contact).subscribe((response : Response) => {
-        if(response.result){
-          Swal.fire('Success!', response.message, 'success');
-          this.contact = new Contact();
-        }
-        else 
-        Swal.fire('Error!', response.message, 'error');
-      });
+      if(this.validateEmail(this.contact.email)){
+        this._MessageService.sendEmail(this.contact).subscribe((response : Response) => {
+          if(response.result){
+            Swal.fire('Success!', response.message, 'success');
+            this.contact = new Contact();
+          }
+          else 
+            Swal.fire('Error!', response.message, 'error');
+        });
+      }
+      else 
+        Swal.fire('Oops!', 'Write a valid email', 'warning');
+      
+
+      
     }
 
 
     validateInput(event : KeyboardEvent) {
-      console.log(event.keyCode);
+      let tag = event.currentTarget["tagName"];
+      let value = event.currentTarget["value"];
+
+      if(tag == "INPUT" && value.length >= 50 && event.keyCode != 8)
+          return false;
+      
+      if(tag == "TEXTAREA" && value.length >= 500 && event.keyCode != 8)
+          return false;
+      
       if( (event.keyCode >= 64 && event.keyCode <= 90) || (event.keyCode >= 97 && event.keyCode <= 122)
         || event.keyCode == 190 || event.keyCode == 8 || event.keyCode == 32 || event.keyCode == 9
         || (event.keyCode >= 48 && event.keyCode <= 57))

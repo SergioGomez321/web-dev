@@ -1,0 +1,104 @@
+
+<div class="wrapper">
+    <section class="section section-lg animated animate__bounceInUp">
+        <section class="section pt-o" *ngIf="project != null">
+          <img class="path" src="assets/img/path4.png" style="width: 75%;" />
+    
+          <div class="container">
+            <div class="title"><h3 class="mb-3">PROJECTS</h3></div>
+
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card" >
+                        <div class="card-body">
+                          
+                          <div *ngIf="project.images.length > 0; then carousel_project else card_image"></div>
+
+                          <ng-template #carousel_project>
+                            <div [style.height]="auto" >
+                              <mat-carousel
+                                timings="250ms ease-in"
+                                [autoplay]="true"
+                                interval="5000"
+                                color="accent"
+                                maxWidth="auto"
+                                proportion="75"
+                                slides="5"
+                                [loop]="true"
+                                [hideArrows]="false"
+                                [hideIndicators]="true"
+                                [useKeyboard]="true"
+                                orientation="ltr">
+                                <mat-carousel-slide
+                                  #matCarouselSlide
+                                  *ngFor="let image of project.images;"
+                                  [image]="image"
+                                  overlayColor="#00000040"
+                                  [hideOverlay]="false">
+                                </mat-carousel-slide>
+                              </mat-carousel>
+                            </div>
+                          </ng-template>
+
+                          <ng-template #card_image>
+                            <img class="card-img-top" [src]="project.img" alt="{{project.title}}">
+                          </ng-template>
+
+                        </div>
+                      </div>
+                </div>
+
+
+                <div class="col-md-6">
+                    <div class="container">
+                      <div class="row">
+                          <div class="pl-md-5">
+                              <h2 >{{project.title}}</h2>
+                            <p [innerHTML]="project.description">
+                              
+                            </p>
+                            <br />
+                          </div> 
+                      </div>
+
+                    </div>
+
+                    <div class="row mt-5 pl-md-4">
+
+                        <div class="col-md-3">
+                            <a  [routerLink]="['/projects']" class="btn btn-danger btn-simple  text-danger btn-block" type="button"><i class="fas fa-arrow-left mr-2"></i> Back</a>
+                        </div>
+                        <div class="col-md-3" *ngIf="project.web != ''">
+                            <a [href]="project.web" target=”_blank” class="btn btn-success btn-simple  text-success btn-block"> 
+                                <i class="fas fa-link mr-2"></i>    web
+                            </a>
+                        </div>
+
+                        <div class="col-md-3" *ngIf="project.github != ''">
+                            <a [href]="project.github" target=”_blank” class="btn btn-info btn-simple  text-info btn-block"> 
+                                <i class="fab fa-github mr-2"></i>   github
+                            </a>
+                        </div>
+
+                        
+                        
+
+                    </div>
+                    
+                </div>
+                
+
+            </div>
+
+                
+    
+                  
+
+            
+        
+            
+          </div>
+        </section>
+      </section>
+</div>

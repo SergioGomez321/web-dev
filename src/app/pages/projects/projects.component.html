@@ -12,7 +12,8 @@
                 <div *ngFor="let project of projects" class="card text-center" >
                     <div class="card-body">
 
-                      <a href="#" (click)="doSomething($event, project)">
+
+                      <a [routerLink]="['/project',  project.id]" >
                         <img class="card-img-top" src="{{project.img}}" alt="{{project.title}}">
 
                       </a>
