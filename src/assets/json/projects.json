@@ -46,7 +46,11 @@
             "summary" : "",
             "video" : "",
             "img" : "assets/img/projects/puzzle/puzzle.png",
-            "images" : [],
+            "images" : [
+              "assets/img/projects/puzzle/puzzle.png",
+              "assets/img/projects/puzzle/puzzle2.png",
+              "assets/img/projects/puzzle/puzzle3.gif"
+            ],
             "github" : "https://github.com/SergioGomez321/puzzle",
             "web" : ""
           },
