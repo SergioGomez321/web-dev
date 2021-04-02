@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { environment } from 'src/environments/environment';
 
 @Injectable({
@@ -7,11 +8,14 @@ import { environment } from 'src/environments/environment';
 })
 export class ProjectService {
 
-  constructor(private _http: HttpClient) { }
+  constructor(private _http: HttpClient,
+    public translate: TranslateService) { 
+
+    }
 
 
   getProjects() {
-    return this._http.get('./assets/json/projects.json');
+    return this._http.get(`./assets/json/projects-${this.translate.currentLang}.json`);
   }
 
   

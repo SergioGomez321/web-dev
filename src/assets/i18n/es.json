@@ -1,0 +1,56 @@
+{
+    "MY_JOB" : "Desarrollador Web",
+    "LANGUAGE" : {
+        "TITLE" : "Lenguaje",
+        "SPANISH" : "Español",
+        "ENGLISH" : "Ingles"
+    },
+    "NAV": {
+        "OPTIONS": {
+            "HOME" : "Inicio",
+            "ABOUT_ME" : "Sobre Mi",
+            "PROJECTS" : "Proyectos",
+            "CONTACT" : "Contacto",
+
+            "TOOLTIPS" : {
+                "HOME" : "Página principal",
+                "ABOUT_ME" : "Más información sobre mi",
+                "PROJECTS" : "Mis proyectos",
+                "CONTACT" : "Contactame",
+                "LINKED_IN" : "Mi perfil en Linked in",
+                "FACEBOOK" : "Mi perfil en Facebook",
+                "INSTAGRAM" : "Mi perfil en Instagram",
+                "GITHUB" : "Mi perfil en Github"
+            }
+        }
+    },
+    "PAGES": {
+        "ABOUT_ME" : {
+            "TITLE" : "SOBRE MI ",
+            "TITLE2" : "COMPAÑIAS EN LAS QUE HE TRABAJADO: ",
+            "DESCRIPTION" : {
+                "PARAGRAPH" : "Hola, mi nombre es José Sergio Gómez Flores, tengo 24 años de edad y actualmente estoy trabajando en Constructora y Pacimentadora VISE como un desarrollador full stack. En  el año 2019 termine mi carrera profesional en Ingenieria en Computación en la Universidad de Leon en Leon Guanajuato México. <br><br>Actualmente tengo gran conocimiento en: ",
+                "LIST": {
+                    "FRONTEND" : "Tecnologías Frontend como: <ul><li>Javascript: Angular 7, Jquery, etc</li><li>CSS3: Bootstrap, Materilize, etc</li><li>HTML5</li></ul>",
+                    "BACKEND" : "Tecnologías Backend como :<ul><li>Java: Spring Framework 5 MVC, JSP, JSTL, Hibernate</li></ul>",
+                    "WEB_SERVICES" : "Servicios web: <ul><li>API Rest</li></ul>",
+                    "DESKTOP" : "Tecnologías de escritrio como:<ul><li>Java: swing</li><li>C#: windows forms</li></ul>",
+                    "DB" : "Administradores de Bases de datos :<ul><li>MySQL, SQL Server</li></ul>",
+                    "VERSION" : "Control de versiones :<ul><li>Git, SVN</li></ul>"
+                }
+            },
+            "CV_BUTTON" : "Descargar CV"
+        },
+
+        "CONTACT" : {
+            "TITLE": "FORMULARIO DE CONTACTO",
+            "NAME": "Nombre",
+            "EMAIL" : "Correo",
+            "SUBJECT" : "Asunto",
+            "MESSAGE" : "Mensaje"
+        }, 
+        "PROJECTS" : {
+            "TITLE": "PROYECTOS"
+        }
+    }
+}

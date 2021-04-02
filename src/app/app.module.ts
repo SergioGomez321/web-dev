@@ -4,7 +4,7 @@ import { FormsModule } from "@angular/forms";
 import { RouterModule } from "@angular/router";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
-import { HttpClientModule } from "@angular/common/http";
+import { HttpClient, HttpClientModule } from "@angular/common/http";
 
 import { BsDropdownModule } from "ngx-bootstrap/dropdown";
 import { ProgressbarModule } from "ngx-bootstrap/progressbar";
@@ -32,7 +32,13 @@ import { ContactComponent } from "./pages/contact/contact.component";
 import { ProjectService } from "./services/project.service";
 import { ProjectComponent } from "./pages/project/project.component";
 import { MatCarouselModule } from "ng-mat-carousel";
+import { TranslateLoader, TranslateModule, TranslateService, TranslateStore } from "@ngx-translate/core";
+import { TranslateHttpLoader } from "@ngx-translate/http-loader";
 
+
+export function HttpLoaderFactory(http : HttpClient){
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
 @NgModule({
   declarations: [
     AppComponent,
@@ -59,15 +65,26 @@ import { MatCarouselModule } from "ng-mat-carousel";
     CollapseModule.forRoot(),
     TabsModule.forRoot(),
     FormsModule,
-    MatCarouselModule.forRoot(),
-    //PagesModule,
+    MatCarouselModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    }),
+    PagesModule,
     //PaginationModule.forRoot(),
     //AlertModule.forRoot(),
     //BsDatepickerModule.forRoot(),
     //CarouselModule.forRoot(),
     //ModalModule.forRoot()
   ],
-  providers: [MessageService, ProjectService],
+  providers: [
+    MessageService, 
+    ProjectService,
+    
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

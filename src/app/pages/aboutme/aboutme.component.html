@@ -6,9 +6,9 @@
           <div class="container">
             <div class="row row-grid  text-left">
 
-                <div class="">
+                <div class="" >
                     <div class="container">
-                      <div class="title"><h3 class="mb-3">ABOUT ME</h3></div>
+                      <div class="title"><h3 class="mb-3">{{ "PAGES.ABOUT_ME.TITLE" | translate }}</h3></div>
                       <div class="row ">
                         <div class="col-md-12 ml-auto col-xl-12 mr-auto">
                           
@@ -17,61 +17,27 @@
                             <div class="card-body">
                                 <div class="container-fluid">
                                     <div class="row">
-                                        <div class="col-md-8">
-                                            <p>
-                                                Hello, my name is José Sergio Gómez Flores, 
-                                                I am 24 years old and I am currently working at Constructora y Pavimentadora VISE as a full stack developer.
-                                                In 2019 I finished my career as a Computer Engineer at  Universidad de Leon in Leon Guanajuato Mexico.
-                                            <br> <br>
-                                            I currently have extensive knowledge in</p> 
+                                        <div class="col-md-8" >
+                                            <p [innerHTML]='"PAGES.ABOUT_ME.DESCRIPTION.PARAGRAPH" | translate'></p> 
                                             <ul>
-                                                <li>Frontend technologies such as:
-                                                    <ul>
-                                                        <li>Javascript: Angular 7, Jquery, etc</li>
-                                                        <li>CSS3: Bootstrap, Materilize, etc</li>
-                                                        <li>HTML5</li>
-                                                    </ul>
-                                                </li>
+                                                <li [innerHTML]='"PAGES.ABOUT_ME.DESCRIPTION.LIST.FRONTEND" | translate'></li>
                     
-                    
-                                                <li>Backend technologies such as:
-                                                    <ul>
-                                                        <li>Java: Spring Framework 5 MVC, JSP, JSTL, Hibernate</li>
-                                                    </ul>
-                                                </li>
+                                                <li [innerHTML]='"PAGES.ABOUT_ME.DESCRIPTION.LIST.BACKEND" | translate'></li>
 
+                                                <li [innerHTML]='"PAGES.ABOUT_ME.DESCRIPTION.LIST.WEB_SERVICES" | translate'></li>
 
-                                                <li>Web Services:
-                                                    <ul>
-                                                        <li>API Rest</li>
-                                                    </ul>
-                                                </li>
+                                                <li [innerHTML]='"PAGES.ABOUT_ME.DESCRIPTION.LIST.DESKTOP" | translate'></li>
 
-                                                <li>Desktop technologies such as:
-                                                    <ul>
-                                                        <li>Java: swing</li>
-                                                        <li>C#: windows forms</li>
-                                                    </ul>
-                                                </li>
+                                                <li [innerHTML]='"PAGES.ABOUT_ME.DESCRIPTION.LIST.DB" | translate'></li>
 
-
-                                                <li>Database managers:
-                                                    <ul>
-                                                        <li>MySQL, SQL Server</li>
-                                                    </ul>
-                                                </li>
-
-                                                <li> Version control :
-                                                    <ul>
-                                                        <li>Git, SVN</li>
-                                                    </ul>
-                                                </li>
+                                                <li [innerHTML]='"PAGES.ABOUT_ME.DESCRIPTION.LIST.VERSION" | translate'></li>
+                            
                                             </ul>
                                             
                                             <a class="btn btn-danger btn-simple btn-round mr-5 mt-5 text-danger"
                                             href="assets/files/Curriculum-Vitae.pdf" download="CV.pdf"> 
                                                 <i class="fas fa-download mr-2"></i>
-                                                Download CV
+                                                {{ "PAGES.ABOUT_ME.CV_BUTTON" | translate }}
                                             </a>
                                             <!--<a class="btn btn-danger btn-simple btn-round mt-5 text-danger" [routerLink]="['/projects']"> 
                                                 <i class="fas fa-tasks mr-2"></i>
@@ -92,7 +58,9 @@
                       </div>
 
                       <br>
-                      <div class="title"><h3 class="mb-3">COMPANIES I´VE WORKED</h3></div>
+                      <div class="title"><h3 class="mb-3" i18n="Title companies|A title  to show companies i have worked@@titleCompanies">
+                        {{ "PAGES.ABOUT_ME.TITLE2" | translate }}
+                      </h3></div>
                       <div class="row">
                         
                         <div class="col-md-12 ml-auto col-xl-4 mr-auto">

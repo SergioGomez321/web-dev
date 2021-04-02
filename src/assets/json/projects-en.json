@@ -1,0 +1,124 @@
+{
+    "projects" : [
+        {
+            "id" : "1",
+            "title" : "Recruitment, induction, training of human resources",
+            "description" : "Form to make a job application and to be considered in future vacancies within the company, this is only a small module of what it really is, unfortunately I can´t show more for company policies. <br> <br> <ul> <li><b>Backend</b>: Java, Spring Framework 5, Hibernate</li> <li><b>Frontend</b>: Jquery, Bootstrap 4 </li></ul> ",
+            "summary" : "",
+            "video" : "",
+            "img" : "assets/img/projects/recruiter/recruiter.png",
+            "images" : [
+              "assets/img/projects/recruiter/recruiter.png",
+              "assets/img/projects/recruiter/recruiter2.png"
+            ],
+            "github" : "",
+            "web" : "https://jweftcapitalhumano.vise.com.mx/Public/Candidato/Solicitud"
+          }, 
+          {
+            "id" : "2",
+            "title" : "Vending a machine",
+            "description" : "Description of Vending a machine",
+            "summary" : "",
+            "video" : "",
+            "img" : "assets/img/projects/default.png",
+            "images" : [
+              "assets/img/projects/default.png",
+              "assets/img/projects/default.png"
+            ],
+            "github" : "",
+            "web" : ""
+          },
+          {
+            "id" : "3",
+            "title" : "Create a computer",
+            "description" : "Description of  create a computer",
+            "summary" : "",
+            "video" : "",
+            "img" : "assets/img/projects/default.png",
+            "images" : [],
+            "github" : "",
+            "web" : ""
+          },
+          {
+            "id" : "4",
+            "title" : "Puzzle",
+            "description" : "A fairly simple puzzle game that has 3 levels of difficulty which influences your time limit to complete it. <br> <br> <ul> <li><b>Programming language</b>: C#</li> <li><b>Technology</b>: Windows Forms</li></ul>   ",
+            "summary" : "",
+            "video" : "",
+            "img" : "assets/img/projects/puzzle/puzzle.png",
+            "images" : [
+              "assets/img/projects/puzzle/puzzle.png",
+              "assets/img/projects/puzzle/puzzle2.png",
+              "assets/img/projects/puzzle/puzzle3.gif"
+            ],
+            "github" : "https://github.com/SergioGomez321/puzzle",
+            "web" : ""
+          },
+          {
+            "id" : "5",
+           "title" : "Chat bot ",
+           "description" : "Description of chat bot",
+           "summary" : "",
+            "video" : "",
+           "img" : "assets/img/projects/chatbot/chatbot.png",
+           "images" : [],
+           "github" : "",
+            "web" : ""
+          }, 
+          {
+            "id" : "6",
+            "title" : "Dashing dashboard",
+            "description" : "Description of dashing dashboard",
+            "summary" : "",
+            "video" : "",
+            "img" : "assets/img/projects/dashing/dashing.png",
+            "images" : [],
+            "github" : "",
+            "web" : ""
+          },
+          {
+            "id" : "7",
+            "title" : "Documents respository",
+            "description" : "Description of documents repository",
+            "summary" : "",
+            "video" : "",
+            "img" : "assets/img/projects/default.png",
+            "images" : [],
+            "github" : "",
+            "web" : ""
+          },
+          {
+            "id" : "8",
+            "title" : "My own page",
+            "description" : "A long time ago I had thought about making a web page like this to be able to show my portfolio of projects and show the world my interests, who I am, etc ... <br> <br> <ul> <li><b>Programming language</b>: Javascript</li> <li><b>Technology</b>: Angular 11, Bootstrap 4</li></ul>",
+            "summary" : "",
+            "video" : "",
+            "img" : "assets/img/projects/page.png",
+            "web" : "https://sergiogomez.herokuapp.com",
+            "github" : "https://github.com/SergioGomez321/web-dev",
+            "images" : []
+          },
+          {
+            "id" : "9",
+            "title" : "Machinery request", 
+            "description" : "Description of machinery request",
+            "summary" : "",
+            "video" : "",
+            "img" : "assets/img/projects/default.png",
+            "images" : [],
+            "github" : "",
+            "web" : ""
+          }, 
+          {
+            "id" : "10",
+            "title" : "Shredder administration",
+            "description" : "Description of Shredder administration",
+            "summary" : "",
+            "video" : "",
+            "img" : "assets/img/projects/default.png",
+            "images" : [],
+            "github" : "",
+            "web" : ""
+          }
+    ]
+}

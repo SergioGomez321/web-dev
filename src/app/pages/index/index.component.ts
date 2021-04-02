@@ -1,4 +1,7 @@
 import { Component, OnInit, OnDestroy } from "@angular/core";
+import { TranslateService } from "@ngx-translate/core";
+
+
 import noUiSlider from "nouislider";
 
 @Component({
@@ -6,19 +9,28 @@ import noUiSlider from "nouislider";
   templateUrl: "index.component.html"
 })
 export class IndexComponent implements OnInit, OnDestroy {
-  isCollapsed = true;
-  focus;
-  focus1;
-  focus2;
-  date = new Date();
-  pagination = 3;
-  pagination1 = 1;
-  constructor() {}
+  
+
+  constructor(private translate: TranslateService) {
+    //this.translate.addLangs(['es','en']);
+    //this.translate.setDefaultLang('es');
+    //this.translate.use('es')
+  }
+
+
+
   scrollToDownload(element: any) {
     element.scrollIntoView({ behavior: "smooth" });
   }
+
+  
+
   ngOnInit() {
     
+    this.translate.addLangs(['es','en']);
+    this.translate.setDefaultLang('es');
+    this.translate.use('es')
+
     var body = document.getElementsByTagName("body")[0];
     body.classList.add("index-page");
 

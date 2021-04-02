@@ -14,6 +14,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { FormsModule } from "@angular/forms";
 import { MessageService } from "./services/message.service";
 import { ProjectComponent } from "./pages/project/project.component";
+import { TranslateLoader, TranslateModule, TranslateService, TranslateStore } from "@ngx-translate/core";
 
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
@@ -32,11 +33,12 @@ const routes: Routes = [
     CommonModule,
     BrowserModule,
     HttpClientModule,
+    TranslateModule,
     RouterModule.forRoot(routes, {
       useHash: true
     })
   ],
-  exports: [],
+  exports: [TranslateModule],
   providers: [
     
   ]

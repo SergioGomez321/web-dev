@@ -25,6 +25,12 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProjectComponent } from './project/project.component';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+
+import { HttpClientModule, HttpClient } from '@angular/common/http'
+import { TranslateLoader, TranslateModule, TranslateService, TranslateStore } from "@ngx-translate/core";
+
+
 
 @NgModule({
   imports: [
@@ -50,8 +56,7 @@ import { ProjectComponent } from './project/project.component';
     ProfilepageComponent,
     RegisterpageComponent,
     LandingpageComponent,
-    AboutmeComponent,
-    
+    AboutmeComponent
     //ProjectsComponent,
     // ContactComponent
   ],
@@ -59,7 +64,8 @@ import { ProjectComponent } from './project/project.component';
     IndexComponent,
     ProfilepageComponent,
     RegisterpageComponent,
-    LandingpageComponent
+    LandingpageComponent,
+    TranslateModule
   ],
   providers: []
 })

@@ -67,7 +67,8 @@
                     <div class="row mt-5 pl-md-4">
 
                         <div class="col-md-3">
-                            <a  [routerLink]="['/projects']" class="btn btn-danger btn-simple  text-danger btn-block" type="button"><i class="fas fa-arrow-left mr-2"></i> Back</a>
+                            <a  [routerLink]="['/projects']" class="btn btn-danger btn-simple  text-danger btn-block" type="button">
+                              <i class="fas fa-arrow-left mr-2"></i> back</a>
                         </div>
                         <div class="col-md-3" *ngIf="project.web != ''">
                             <a [href]="project.web" target=”_blank” class="btn btn-success btn-simple  text-success btn-block"> 
