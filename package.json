@@ -3,10 +3,10 @@
   "version": "1.2.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --max_old_space_size=2560",
-    "start:es": "ng serve --max_old_space_size=2560 --configuration=es",
-    "build": "ng build --max_old_space_size=2560 --prod",
-    "build:es": "ng build --prod --max_old_space_size=2560",
+    "start": "ng serve",
+    "start:es": "ng serve --configuration=es",
+    "build": "ng build --prod",
+    "build:es": "ng build --prod",
     "description": "",
     "test": "ng test",
     "lint": "ng lint",
@@ -45,6 +45,7 @@
     "nodemon": "^2.0.7",
     "nouislider": "14.6.3",
     "rxjs": "6.6.3",
+    "sweetalert2": "^10.14.0",
     "tslib": "2.0.3",
     "zone.js": "0.11.3",
     "@angular-devkit/build-angular": "0.1100.5",
@@ -53,6 +54,7 @@
     "typescript": "4.0.3"
   },
   "devDependencies": {
+
     "@angular/language-service": "11.0.5",
     "@types/node": "14.14.20",
     "@types/jasmine": "3.6.2",

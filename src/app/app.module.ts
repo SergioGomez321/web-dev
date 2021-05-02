@@ -31,7 +31,6 @@ import { MessageService } from "./services/message.service";
 import { ContactComponent } from "./pages/contact/contact.component";
 import { ProjectService } from "./services/project.service";
 import { ProjectComponent } from "./pages/project/project.component";
-import { MatCarouselModule } from "ng-mat-carousel";
 import { TranslateLoader, TranslateModule, TranslateService, TranslateStore } from "@ngx-translate/core";
 import { TranslateHttpLoader } from "@ngx-translate/http-loader";
 
@@ -62,7 +61,7 @@ export function HttpLoaderFactory(http : HttpClient){
     CollapseModule.forRoot(),
     TabsModule.forRoot(),
     FormsModule,
-    MatCarouselModule,
+    
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
