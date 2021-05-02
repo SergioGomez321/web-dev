@@ -52,7 +52,7 @@ import { MatCarouselModule } from "@ngmodule/material-carousel";
     CarouselModule.forRoot(),
     ModalModule.forRoot(),
     MatCarouselModule.forRoot(),
-    TranslateModule.forChild()
+    //TranslateModule.forChild()
   ],
   declarations: [
     IndexComponent,
