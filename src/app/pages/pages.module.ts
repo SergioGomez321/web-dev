@@ -29,6 +29,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { HttpClientModule, HttpClient } from '@angular/common/http'
 import { TranslateLoader, TranslateModule, TranslateService, TranslateStore } from "@ngx-translate/core";
+import { MatCarouselModule } from "@ngmodule/material-carousel";
 
 
 
@@ -49,14 +50,18 @@ import { TranslateLoader, TranslateModule, TranslateService, TranslateStore } fr
     AlertModule.forRoot(),
     BsDatepickerModule.forRoot(),
     CarouselModule.forRoot(),
-    ModalModule.forRoot()
+    ModalModule.forRoot(),
+    MatCarouselModule.forRoot(),
   ],
   declarations: [
     IndexComponent,
     ProfilepageComponent,
     RegisterpageComponent,
     LandingpageComponent,
-    AboutmeComponent
+    AboutmeComponent,
+    ProjectsComponent,
+    ContactComponent,
+    ProjectComponent
     //ProjectsComponent,
     // ContactComponent
   ],

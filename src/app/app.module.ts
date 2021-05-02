@@ -42,10 +42,7 @@ export function HttpLoaderFactory(http : HttpClient){
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
-     ProjectsComponent,
-     ContactComponent,
-     ProjectComponent
+    NavbarComponent
     // IndexComponent,
     // ProfilepageComponent,
     // RegisterpageComponent,
@@ -60,7 +57,7 @@ export function HttpLoaderFactory(http : HttpClient){
     RouterModule,
     AppRoutingModule,
     BsDropdownModule.forRoot(),
-    //ProgressbarModule.forRoot(),
+    
     TooltipModule.forRoot(),
     CollapseModule.forRoot(),
     TabsModule.forRoot(),

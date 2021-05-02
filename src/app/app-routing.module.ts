@@ -15,6 +15,7 @@ import { FormsModule } from "@angular/forms";
 import { MessageService } from "./services/message.service";
 import { ProjectComponent } from "./pages/project/project.component";
 import { TranslateLoader, TranslateModule, TranslateService, TranslateStore } from "@ngx-translate/core";
+import { PagesModule } from "./pages/pages.module";
 
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
@@ -36,7 +37,8 @@ const routes: Routes = [
     TranslateModule,
     RouterModule.forRoot(routes, {
       useHash: true
-    })
+    }),
+    PagesModule
   ],
   exports: [TranslateModule],
   providers: [

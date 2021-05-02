@@ -47,7 +47,8 @@
             "NAME": "Nombre",
             "EMAIL" : "Correo",
             "SUBJECT" : "Asunto",
-            "MESSAGE" : "Mensaje"
+            "MESSAGE" : "Mensaje",
+            "BUTTON" : "<i class='fas fa-paper-plane mr-2'></i> Enviar"
         }, 
         "PROJECTS" : {
             "TITLE": "PROYECTOS"
