@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from "@angular/core";
-import Chart from "chart.js";
+
 
 @Component({
   selector: "app-landingpage",
@@ -10,11 +10,11 @@ export class LandingpageComponent implements OnInit, OnDestroy {
   constructor() {}
 
   ngOnInit() {
-    var body = document.getElementsByTagName("body")[0];
+    /*var body = document.getElementsByTagName("body")[0];
     body.classList.add("landing-page");
 
-    var canvas: any = document.getElementById("chartBig");
-    var ctx = canvas.getContext("2d");
+    //var canvas: any = document.getElementById("chartBig");
+    //var ctx = canvas.getContext("2d");
     var gradientFill = ctx.createLinearGradient(0, 350, 0, 50);
     gradientFill.addColorStop(0, "rgba(228, 76, 196, 0.0)");
     gradientFill.addColorStop(1, "rgba(228, 76, 196, 0.14)");
@@ -109,7 +109,7 @@ export class LandingpageComponent implements OnInit, OnDestroy {
           ]
         }
       }
-    });
+    });*/
   }
   ngOnDestroy() {
     var body = document.getElementsByTagName("body")[0];

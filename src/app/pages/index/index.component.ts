@@ -27,9 +27,9 @@ export class IndexComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     
-    this.translate.addLangs(['es','en']);
+    /*this.translate.addLangs(['es','en']);
     this.translate.setDefaultLang('es');
-    this.translate.use('es')
+    this.translate.use('es')*/
 
     var body = document.getElementsByTagName("body")[0];
     body.classList.add("index-page");
