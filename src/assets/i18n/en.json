@@ -32,7 +32,7 @@
                 "PARAGRAPH" : "Hello, my name is José Sergio Gómez Flores, I am 24 years old and I am currently working at Constructora y Pavimentadora VISE as a full stack developer. In 2019 I finished my career as a Computer Engineer at  Universidad de Leon in Leon Guanajuato Mexico. <br> <br> I currently have extensive knowledge in",
                 "LIST": {
                     "FRONTEND" : "Frontend technologies such as:<ul><li>Javascript: Angular 7, Jquery, etc</li><li>CSS3: Bootstrap, Materilize, etc</li><li>HTML5</li></ul>",
-                    "BACKEND" : "Backend technologies such as:<ul><li>Java: Spring Framework 5 MVC, JSP, JSTL, Hibernate</li></ul>",
+                    "BACKEND" : "Backend technologies such as:<ul><li>Java: Spring Framework 5 MVC, JSP, JSTL, Hibernate</li><li>Node js: express</li></ul>",
                     "WEB_SERVICES" : "Web Services: <ul><li>API Rest</li></ul>",
                     "DESKTOP" : "Desktop technologies such as:<ul><li>Java: swing</li><li>C#: windows forms</li></ul>",
                     "DB" : "Database managers:<ul><li>MySQL, SQL Server</li></ul>",

@@ -16,6 +16,20 @@
           }, 
           {
             "id" : "2",
+            "title" : "Api Here",
+            "description" : "I did this small project when I was still in school, I consider myself quite curious and I like to investigate, so I started doing tests to be able to consume an API in this case from HERE<br> <br> <ul> <li><b>Backend</b>: Consumed by HERE API services</li> <li><b>Frontend</b>: Jquery, Bootstrap 4 </li></ul> ",
+            "summary" : "",
+            "video" : "",
+            "img" : "assets/img/projects/here/here.png",
+            "images" : [
+              "assets/img/projects/here/here.png",
+              "assets/img/projects/here/here2.png"
+            ],
+            "github" : "https://github.com/SergioGomez321/here_api",
+            "web" : "https://sergiogomez-here.herokuapp.com/"
+          },
+          {
+            "id" : "3",
             "title" : "Vending a machine",
             "description" : "Description of Vending a machine",
             "summary" : "",
@@ -29,7 +43,7 @@
             "web" : ""
           },
           {
-            "id" : "3",
+            "id" : "4",
             "title" : "Create a computer",
             "description" : "Description of  create a computer",
             "summary" : "",
@@ -40,7 +54,7 @@
             "web" : ""
           },
           {
-            "id" : "4",
+            "id" : "5",
             "title" : "Puzzle",
             "description" : "A fairly simple puzzle game that has 3 levels of difficulty which influences your time limit to complete it. <br> <br> <ul> <li><b>Programming language</b>: C#</li> <li><b>Technology</b>: Windows Forms</li></ul>   ",
             "summary" : "",
@@ -55,7 +69,7 @@
             "web" : ""
           },
           {
-            "id" : "5",
+            "id" : "6",
            "title" : "Chat bot ",
            "description" : "Description of chat bot",
            "summary" : "",
@@ -65,17 +79,7 @@
            "github" : "",
             "web" : ""
           }, 
-          {
-            "id" : "6",
-            "title" : "Dashing dashboard",
-            "description" : "Description of dashing dashboard",
-            "summary" : "",
-            "video" : "",
-            "img" : "assets/img/projects/dashing/dashing.png",
-            "images" : [],
-            "github" : "",
-            "web" : ""
-          },
+          
           {
             "id" : "7",
             "title" : "Documents respository",
@@ -89,6 +93,17 @@
           },
           {
             "id" : "8",
+            "title" : "Dashing dashboard",
+            "description" : "Description of dashing dashboard",
+            "summary" : "",
+            "video" : "",
+            "img" : "assets/img/projects/dashing/dashing.png",
+            "images" : [],
+            "github" : "",
+            "web" : ""
+          },
+          {
+            "id" : "9",
             "title" : "My own page",
             "description" : "A long time ago I had thought about making a web page like this to be able to show my portfolio of projects and show the world my interests, who I am, etc ... <br> <br> <ul> <li><b>Programming language</b>: Javascript</li> <li><b>Technology</b>: Angular 11, Bootstrap 4</li></ul>",
             "summary" : "",
@@ -99,7 +114,7 @@
             "images" : []
           },
           {
-            "id" : "9",
+            "id" : "10",
             "title" : "Machinery request", 
             "description" : "Description of machinery request",
             "summary" : "",
@@ -110,7 +125,7 @@
             "web" : ""
           }, 
           {
-            "id" : "10",
+            "id" : "11",
             "title" : "Shredder administration",
             "description" : "Description of Shredder administration",
             "summary" : "",
