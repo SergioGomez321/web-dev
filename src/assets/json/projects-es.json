@@ -1,19 +1,6 @@
 {
     "projects" : [
-        {
-            "id" : "1",
-            "title" : "Reclutamiento, inducción, capacitación, Evaluación del capital humano",
-            "description" : "Formulario para capturar una solicitud de empleo y ser considerado en futuras vacantes dentro de la compañia,  este es solo un pequeño modulo de todo lo que realmente es, desafortunadamente no puedo mas por politicas de la empresa. <br> <br> <ul> <li><b>Backend</b>: Java, Spring Framework 5, Hibernate</li> <li><b>Frontend</b>: Jquery, Bootstrap 4 </li></ul>",
-            "summary" : "",
-            "video" : "",
-            "img" : "assets/img/projects/recruiter/recruiter.png",
-            "images" : [
-              "assets/img/projects/recruiter/recruiter.png",
-              "assets/img/projects/recruiter/recruiter2.png"
-            ],
-            "github" : "",
-            "web" : "https://jweftcapitalhumano.vise.com.mx/Public/Candidato/Solicitud"
-          }, 
+        
           {
             "id" : "2",
             "title" : "Api Here",
@@ -80,17 +67,6 @@
             "web" : ""
           }, 
           {
-            "id" : "7",
-            "title" : "Documents respository",
-            "description" : "Description of documents repository",
-            "summary" : "",
-            "video" : "",
-            "img" : "assets/img/projects/default.png",
-            "images" : [],
-            "github" : "",
-            "web" : ""
-          },
-          {
             "id" : "8",
             "title" : "Dashing dashboard",
             "description" : "Description of dashing dashboard",
@@ -111,28 +87,6 @@
             "web" : "https://sergiogomez.herokuapp.com",
             "github" : "https://github.com/SergioGomez321/web-dev",
             "images" : []
-          },
-          {
-            "id" : "10",
-            "title" : "Machinery request", 
-            "description" : "Description of machinery request",
-            "summary" : "",
-            "video" : "",
-            "img" : "assets/img/projects/default.png",
-            "images" : [],
-            "github" : "",
-            "web" : ""
-          }, 
-          {
-            "id" : "11",
-            "title" : "Shredder administration",
-            "description" : "Description of Shredder administration",
-            "summary" : "",
-            "video" : "",
-            "img" : "assets/img/projects/default.png",
-            "images" : [],
-            "github" : "",
-            "web" : ""
           }
           
     ]
