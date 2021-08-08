@@ -17,22 +17,23 @@
           },
           {
             "id" : "3",
-            "title" : "Vending a machine",
-            "description" : "Description of Vending a machine",
+            "title" : "Ruleta online",
+            "description" : "La inspiración para este proyecto fue que en uno de mis trabajos mis compañeros y yo nos turnabamos para limpiar la mesa, y un dia decidimos utilizar una ruleta online para sortear quien tendría que hacerlo. <br> <br> <ul> <li><b>Lenguaje de programación</b>: Javascript</li> <li><b>Tecnolgias</b>: Angular 12, Bootstrap 5</li></ul> ",
             "summary" : "",
             "video" : "",
-            "img" : "assets/img/projects/default.png",
+            "img" : "assets/img/projects/roulette/roulette3.png",
+            "web" : "https://sergiogomez-roulette.herokuapp.com",
+            "github" : "https://github.com/SergioGomez321/roulette",
             "images" : [
-              "assets/img/projects/default.png",
-              "assets/img/projects/default.png"
-            ],
-            "github" : "",
-            "web" : ""
+              "assets/img/projects/roulette/roulette3.png", 
+              "assets/img/projects/roulette/roulette.png", 
+              "assets/img/projects/roulette/roulette2.png"
+            ]
           },
           {
             "id" : "4",
-            "title" : "Create a computer",
-            "description" : "Description of  create a computer",
+            "title" : "Crea una computadora",
+            "description" : "Descripcion de crea una computadora",
             "summary" : "",
             "video" : "",
             "img" : "assets/img/projects/default.png",
@@ -43,7 +44,7 @@
           {
             "id" : "5",
             "title" : "Juego de rompecabezas",
-            "description" : "Un juegoo de rompecabezas bastante simple que tiene 3 niveles de dificultad que influyen en el limite de tiempo para completarlo. <br> <br> <ul> <li><b>Lenguaje de programación</b>: C#</li> <li><b>Tecnología</b>: Windows Forms</li></ul>   ",
+            "description" : "Un juego de rompecabezas bastante simple que tiene 3 niveles de dificultad que influyen en el limite de tiempo para completarlo. <br> <br> <ul> <li><b>Lenguaje de programación</b>: C#</li> <li><b>Tecnología</b>: Windows Forms</li></ul>   ",
             "summary" : "",
             "video" : "",
             "img" : "assets/img/projects/puzzle/puzzle.png",
@@ -58,7 +59,7 @@
           {
             "id" : "6",
            "title" : "Chat bot ",
-           "description" : "Description of chat bot",
+           "description" : "Descripcion de chat bot",
            "summary" : "",
             "video" : "",
            "img" : "assets/img/projects/chatbot/chatbot.png",
@@ -69,7 +70,7 @@
           {
             "id" : "8",
             "title" : "Dashing dashboard",
-            "description" : "Description of dashing dashboard",
+            "description" : "Descripcion de dashing dashboard",
             "summary" : "",
             "video" : "",
             "img" : "assets/img/projects/dashing/dashing.png",
@@ -79,14 +80,28 @@
           },
           {
             "id" : "9",
-            "title" : "My own page",
-            "description" : "A long time ago I had thought about making a web page like this to be able to show my portfolio of projects and show the world my interests, who I am, etc ... <br> <br> <ul> <li><b>Programming language</b>: Javascript</li> <li><b>Technology</b>: Angular 11, Bootstrap 4</li></ul>",
+            "title" : "Mi propia página web",
+            "description" : "Hace un tiempo habia pensado hace mi propia página web  como esta para poder mostrar mi portafolio de proyectos y mostrarle al mundo mis intereses, quien soy, etc... <br> <br> <ul> <li><b>Lenguaje de programación</b>: Javascript</li> <li><b>Tecnolgias</b>: Angular 11, Bootstrap 4</li></ul> ",
             "summary" : "",
             "video" : "",
             "img" : "assets/img/projects/page.png",
             "web" : "https://sergiogomez.herokuapp.com",
             "github" : "https://github.com/SergioGomez321/web-dev",
             "images" : []
+          },
+          {
+            "id" : "10",
+            "title" : "Maquina vendedora de refrescos",
+            "description" : "Descripcion de maquina vendedora de refrescos",
+            "summary" : "",
+            "video" : "",
+            "img" : "assets/img/projects/default.png",
+            "images" : [
+              "assets/img/projects/default.png",
+              "assets/img/projects/default.png"
+            ],
+            "github" : "",
+            "web" : ""
           }
           
     ]

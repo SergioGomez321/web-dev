@@ -16,17 +16,18 @@
           },
           {
             "id" : "3",
-            "title" : "Vending a machine",
-            "description" : "Description of Vending a machine",
+            "title" : "Roulette online",
+            "description" : "The inspiration for this project was that in one of my jobs my colleagues and I took turns cleaning the table, and one day we decided to use an online roulette to sort out who would have to do it.  <br> <br> <ul> <li><b>Programming language</b>: Javascript</li> <li><b>Technology</b>: Angular 12, Bootstrap 5</li></ul>",
             "summary" : "",
             "video" : "",
-            "img" : "assets/img/projects/default.png",
+            "img" : "assets/img/projects/roulette/roulette3.png",
+            "web" : "https://sergiogomez-roulette.herokuapp.com",
+            "github" : "https://github.com/SergioGomez321/roulette",
             "images" : [
-              "assets/img/projects/default.png",
-              "assets/img/projects/default.png"
-            ],
-            "github" : "",
-            "web" : ""
+              "assets/img/projects/roulette/roulette3.png",
+              "assets/img/projects/roulette/roulette.png", 
+              "assets/img/projects/roulette/roulette2.png"
+            ]
           },
           {
             "id" : "4",
@@ -86,6 +87,20 @@
             "web" : "https://sergiogomez.herokuapp.com",
             "github" : "https://github.com/SergioGomez321/web-dev",
             "images" : []
+          },
+          {
+            "id" : "10",
+            "title" : "Soda vending machine",
+            "description" : "Description of Vending a machine",
+            "summary" : "",
+            "video" : "",
+            "img" : "assets/img/projects/default.png",
+            "images" : [
+              "assets/img/projects/default.png",
+              "assets/img/projects/default.png"
+            ],
+            "github" : "",
+            "web" : ""
           }
     ]
 }
